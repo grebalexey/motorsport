@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gilroy"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gilroy"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Gilroy"), url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "SF";
+  font-style: normal;
+  font-weight: 600;
+  src: local("SF Pro Display"), url("../fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SF";
+  font-style: normal;
+  font-weight: 500;
+  src: local("SF Pro Display"), url("../fonts/SF-Pro-Display-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SF";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF Pro Display"), url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nordin";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Nordin free"), url("../fonts/Nordin-Regular.woff2") format("woff2"), url("../fonts/Nordin-Regular.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 140px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-burger svg {
+  stroke: white;
+  width: 18px;
+  height: 11.5px;
+}
+.header-phone {
+  display: flex;
+  align-items: center;
+}
+.header-phone svg {
+  fill: white;
+  width: 19px;
+  height: 19px;
+}
+.header-items {
+  display: flex;
+  align-items: center;
+}
+.header-item + .header-item {
+  margin-left: 39px;
+}
+.header-search {
+  display: flex;
+}
+.header-search__button {
+  padding: 5px 5px 0 5px;
+  margin-right: 12px;
+  border: none;
+  background-color: transparent;
+}
+.header-search__button svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+.header-search__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFF;
+}
+.header-search__input::placeholder {
+  color: #FFF;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.header-profile svg {
+  fill: white;
+  width: 27px;
+  height: 27px;
+}
+.header-cart svg {
+  fill: white;
+  width: 24px;
+  height: 29px;
+}
+
+.hero-section {
+  background-image: url(../../images/hero-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1260px;
+  position: relative;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.hero-title {
+  color: #FFF;
+  font-family: "Nordin", sans-serif;
+  font-size: 200px;
+  margin-top: 410px;
+}
+.hero-subtitle {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+.hero-button {
+  border: 1px solid #FFF;
+  background: transparent;
+  padding: 18px 38px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 31px;
+  width: 287px;
+  height: 70px;
+}
+.hero-button svg {
+  stroke: white;
+  width: 38px;
+  height: 3px;
+}
+.hero-schedule {
+  color: #FFF;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  position: absolute;
+  bottom: 0;
+  right: 140px;
+}
